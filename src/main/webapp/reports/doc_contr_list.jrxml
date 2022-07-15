@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.0.3.final using JasperReports Library version 6.0.3  -->
+<!-- 2016-04-15T14:37:05 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ItemListReport" pageWidth="640" pageHeight="880" columnWidth="640" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="9df80b02-fe45-4d54-918d-4c1bbbb4e9eb">
+	<property name="ireport.zoom" value="1.464100000000018"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="net.sf.jasperreports.export.detect.cell.type" value="true"/>
+	<property name="net.sf.jasperreports.export.ignore.graphics" value="true"/>
+	<property name="net.sf.jasperreports.export.remove.empty.space.between.rows" value="true"/>
+	<property name="net.sf.jasperreports.export.remove.empty.space.between.columns" value="true"/>
+	<property name="net.sf.jasperreports.style.evaluation.time.enabled" value="true"/>
+	<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Transparent" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Transparent" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Transparent" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="dataset1" uuid="0916c3d7-3399-4b8a-a411-366f82a2078d"/>
+	<parameter name="P_Logo" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="Fld_Af" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="Fld_Bg" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="Fld_Ae" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="Fld_Be2" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="Fcx_37a" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="Fcx_37b" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="Fld_Be" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="Fld_Ad" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="Fcx_Aa" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="Fcx_Ab" class="java.lang.String" isForPrompting="false"/>
+	<field name="itemNumber" class="java.lang.Integer"/>
+	<field name="rank" class="java.lang.Integer"/>
+	<field name="containerReference" class="java.lang.String"/>
+	<field name="containerPackageTypeCode" class="java.lang.String"/>
+	<field name="containerTypeCode" class="java.lang.String"/>
+	<field name="sealNumber1" class="java.lang.String"/>
+	<field name="mark1" class="java.lang.String"/>
+	<field name="mark2" class="java.lang.String"/>
+	<columnHeader>
+		<band height="165">
+			<staticText>
+				<reportElement key="staticText-5" mode="Opaque" x="79" y="151" width="101" height="14" forecolor="#006600" backcolor="#ECFEF4" uuid="a7450b8f-b52e-441e-82a8-28c749b829ac"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font fontName="Arial" size="7" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[ Identité du Conteneur]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-8" mode="Opaque" x="180" y="151" width="40" height="14" forecolor="#006600" backcolor="#ECFEF4" uuid="e9bfd14a-ef26-4b47-99df-8fa3190190c9"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font fontName="Arial" size="7" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[Type Ctn]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-6" mode="Opaque" x="25" y="151" width="54" height="14" forecolor="#006600" backcolor="#ECFEF4" uuid="56313df3-6797-4dd8-a118-d8465b80a8e0"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font fontName="Arial" size="7" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[N° de l'article]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-14" mode="Opaque" x="220" y="151" width="310" height="14" forecolor="#006600" backcolor="#ECFEF4" uuid="00414dd6-8b16-425a-a1bc-a4830740a361"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#666666"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font fontName="Arial" size="7" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[--------------------   Numéros  de Plomb   -------------------]]></text>
+			</staticText>
+			<image isUsingCache="false">
+				<reportElement key="image-1" x="10" y="10" width="27" height="24" uuid="b44a86e3-cb8c-4a32-b251-2189b460dc36"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA[$P{P_Logo}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement key="staticText-4" mode="Opaque" x="25" y="43" width="470" height="32" forecolor="#006600" backcolor="#ECFEF4" uuid="19255834-9b26-43cd-9912-08f29a0747cd"/>
+				<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#999999"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#999999"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#999999"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#999999"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="22" isBold="true" pdfFontName="Helvetica"/>
+				</textElement>
+				<text><![CDATA[Liste des conteneurs de la declaration]]></text>
+			</staticText>
+			<line>
+				<reportElement key="line-3" x="26" y="82" width="470" height="1" forecolor="#CCCCCC" backcolor="#999999" uuid="72544da7-66b3-41aa-b1f9-7d26ea397523"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement key="staticText-10" x="27" y="86" width="125" height="11" forecolor="#006600" uuid="a8ee1acf-34fb-4620-b6cd-1f78c484b18a"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="7" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Référence Douane]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-11" x="27" y="99" width="125" height="11" forecolor="#006600" uuid="7e847a74-506a-46b8-96ca-91ada2668685"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="7" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Numéro de Liquidation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="staticText-12" x="27" y="111" width="125" height="11" forecolor="#006600" uuid="25ef966a-2968-4224-9001-cf23075122df"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="7" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Type de Procédure]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-153" x="263" y="86" width="103" height="11" uuid="7267e99a-f345-4efa-85dc-9b2353a8d758"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Fld_Af}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-154" x="263" y="99" width="103" height="11" uuid="d61dff5f-8ccf-4bea-8418-3ed4505cd5a7"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Fld_Bg}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-155" x="196" y="86" width="68" height="11" uuid="a9810d28-76c1-4950-adc4-e904becf94db"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Fld_Ae}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-156" x="196" y="99" width="68" height="11" uuid="6bad12a7-5e34-4feb-8c19-9fdb0d44a1bc"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Fld_Be2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-157" x="196" y="111" width="68" height="11" uuid="1cfab3d5-9363-460b-8107-ee4142494e6d"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Fcx_37b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-158" x="160" y="111" width="37" height="11" uuid="058ce24e-15c8-4b26-aa0a-0a68600eef7a"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Fcx_37a}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-159" x="160" y="99" width="37" height="11" uuid="6c012ebd-4d64-4a19-80e9-28801c41df6b"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Fld_Be}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-160" x="160" y="86" width="37" height="11" uuid="0887b772-478b-45ab-b841-c6bb8329a49c"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Fld_Ad}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement key="staticText-13" x="27" y="127" width="40" height="13" forecolor="#006600" uuid="3a63261e-9d46-44f2-a3bf-1fc24c36fea2"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="7" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Bureau]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-163" x="73" y="127" width="33" height="13" uuid="148e4e98-3077-4938-82c0-b232179b72cf"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$P{Fcx_Aa}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="textField-164" x="112" y="127" width="84" height="13" uuid="40445d9a-d73a-4b8f-940c-fa009fdceb87"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textFieldExpression><![CDATA[$P{Fcx_Ab}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement key="line-4" x="26" y="142" width="470" height="1" forecolor="#CCCCCC" backcolor="#999999" uuid="9c72f6d9-19a5-43d0-a1e1-b8d058df12a0"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="18">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement style="table" mode="Transparent" x="25" y="0" width="54" height="18" backcolor="#FFFFFF" uuid="37282ec1-1b01-41d9-8e10-77b29ef65a29"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#666666"/>
+					<topPen lineWidth="0.0" lineColor="#666666"/>
+					<leftPen lineWidth="0.0" lineColor="#666666"/>
+					<bottomPen lineWidth="0.0" lineColor="#666666"/>
+					<rightPen lineWidth="0.0" lineColor="#666666"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="7"/>
+					<paragraph leftIndent="5" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{itemNumber}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="79" y="0" width="101" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="b789de83-61a0-47a3-8daa-0d8c50ecbf33"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#666666"/>
+					<topPen lineWidth="0.0" lineColor="#666666"/>
+					<leftPen lineWidth="0.0" lineColor="#666666"/>
+					<bottomPen lineWidth="0.0" lineColor="#666666"/>
+					<rightPen lineWidth="0.0" lineColor="#666666"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="SansSerif" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single" leftIndent="5" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{containerReference}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="181" y="0" width="38" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="7b6ddb53-0859-4265-bf87-e02541878614"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#666666"/>
+					<topPen lineWidth="0.0" lineColor="#666666"/>
+					<leftPen lineWidth="0.0" lineColor="#666666"/>
+					<bottomPen lineWidth="0.0" lineColor="#666666"/>
+					<rightPen lineWidth="0.0" lineColor="#666666"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="SansSerif" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single" leftIndent="5" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{containerTypeCode}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="220" y="0" width="110" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="5cf2d209-ac41-4902-a277-c179373d4ff4"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#666666"/>
+					<topPen lineWidth="0.0" lineColor="#666666"/>
+					<leftPen lineWidth="0.0" lineColor="#666666"/>
+					<bottomPen lineWidth="0.0" lineColor="#666666"/>
+					<rightPen lineWidth="0.0" lineColor="#666666"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="SansSerif" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single" leftIndent="5" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sealNumber1}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="330" y="0" width="100" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="2864b4ff-764c-4cb6-a440-50b344d298aa"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#666666"/>
+					<topPen lineWidth="0.0" lineColor="#666666"/>
+					<leftPen lineWidth="0.0" lineColor="#666666"/>
+					<bottomPen lineWidth="0.0" lineColor="#666666"/>
+					<rightPen lineWidth="0.0" lineColor="#666666"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="SansSerif" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single" leftIndent="5" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mark1}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="430" y="0" width="100" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="2bcce9f4-25f4-4151-b97a-0e43262bd8e5"/>
+				<box>
+					<pen lineWidth="0.0" lineColor="#666666"/>
+					<topPen lineWidth="0.0" lineColor="#666666"/>
+					<leftPen lineWidth="0.0" lineColor="#666666"/>
+					<bottomPen lineWidth="0.0" lineColor="#666666"/>
+					<rightPen lineWidth="0.0" lineColor="#666666"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="SansSerif" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single" leftIndent="5" rightIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mark2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

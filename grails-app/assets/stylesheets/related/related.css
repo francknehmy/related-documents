@@ -1,0 +1,226 @@
+.actions {
+    padding-left: 7px !important;
+    text-align:center !important;
+    width: 20px !important;
+}
+
+.j_searchResHeader{
+    width:auto !important;
+}
+table.searchRes > thead > tr > th {
+    overflow: hidden !important;
+}
+
+.column-selector #cog {
+    color : #4a8846;
+}
+
+.column-selector > a > span {
+    font-size: 15px;
+}
+
+.column-selector > ul {
+    margin-top: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.column-selector > ul > div {
+    width: 200px;
+}
+
+.column-selector > ul > div > table {
+    width: 100%;
+}
+
+.column-selector > ul > div > table > tbody > tr > td {
+    border-bottom: 1px solid #ddd;
+}
+
+.column-selector > ul > div >table > tbody > tr > td:first-child {
+    padding: 1rem 1.2rem;
+}
+
+.column-selector > ul > div > table > tbody > tr:last-child > td {
+    border-bottom: none;
+}
+
+#columnsToChoose {
+    max-height: 300px;
+    max-width: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+    padding-top: 10px; !important;
+    padding-bottom: 38px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    left: 45%;
+    margin-top: 10%;
+    position: absolute;
+    border-top: 16px solid #4a8846;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.relatedDocumentBorder{
+    border: 4px solid #D8D8D8;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#loadingContainer, #timberTemplate, #forexTemplate, #tvfTemplate {
+    overflow: auto;
+    width: 100%;
+    height: 300px;
+}
+
+
+
+#hover-cap-4col .thumbnail {
+    position:relative;
+    overflow:hidden;
+    margin: 5px !important;
+}
+
+.caption {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    color:#fff !important;
+}
+
+.thumbnails {
+    margin: 5px !important;
+}
+
+.thumbnail-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#thumbnailImg {
+    height:200px;
+    max-width:100%;
+}
+
+.statIcon {
+    position: absolute;
+    right: 0px;
+}
+
+.icon-ban-circle {
+    font-size: 1000px !important;
+}
+
+.list-img {
+    float: left !important;
+    margin: 5px 10px !important;
+    width: 180px !important;
+}
+
+p.relatedDocumentReference{
+    text-align: center;
+    color: gray;
+    font-size: 11px;
+}
+
+p.relatedDocumentReference-break{
+    text-align: center;
+    color: gray;
+    font-size: 11px;
+    word-wrap: break-word;
+}
+
+.actionBtns {
+    height: 50px !important;
+    width: 55px !important;
+    margin: 10px !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    font-size: 10px !important;
+    background-color: #e6e6e6;
+    padding: 16px 16px 10px 12px !important;
+}
+
+.printBtn {
+    height: 50px !important;
+    width: 55px !important;
+    margin: 10px !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    font-size: 10px !important;
+    background-color: transparent;
+    padding: 16px 16px 10px 5px !important;
+    border: 1px solid white;
+    color: white;
+}
+
+.printBtn:hover{
+    color: white;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.thmb_Bdg {
+    position: absolute;
+    right: 5px;
+    top: -5px;
+}
+
+.auth_main {
+    overflow: hidden;
+}
+
+.relatedDocumentBorder{
+    border: 4px solid #D8D8D8;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+
+}
+
+.size-badge {
+    background-color: gray;
+    margin: 0px 5px !important;
+    vertical-align: super !important;
+    padding: 0px 9px !important;
+}
+
+.relatedDocumentContent {
+    overflow: auto;
+    width: 100%;
+    height: 300px;
+}
+
+.nobullet {
+    list-style-type: none;
+}
+
+.hideRelatedDocumentSection {
+    display: none;
+}
